@@ -157,6 +157,7 @@ impl ScrapingWrapper {
     pub fn click(&self, element: Element) -> Result<(), Box<dyn Error>> {
         let func = || {
             element.click()?; // Perform click
+            sleep(Duration::from_secs(1));
             self.tab.wait_until_navigated()?; // Wait for navigation
             Ok(())
         };
