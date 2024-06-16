@@ -1,0 +1,14 @@
+[package]
+name = "common_library"
+version = "0.1.0"
+authors = ["kawaji <kawaji.r.333@gmail.com>"]
+edition = "2021"
+description = "A collection of common Rust libraries and utilities to streamline development and promote code reuse."
+license = "MIT"
+
+[dependencies]
+headless_chrome = "1.0.10"
+
+[lib]
+name = "common_library"
+path = "src/lib.rs"
